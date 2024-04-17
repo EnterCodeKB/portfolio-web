@@ -1,0 +1,52 @@
+@tailwind components;
+@tailwind utilities;
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 10px;
+}
+
+nav {
+  padding: 30px;
+  height: 20px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  justify-content: flex-end;
+  gap: 40px;
+}
+li {
+  display: flex;
+  gap: 80px;
+  margin-right: 40px;
+}
+.box23 {
+  align-items: center;
+  display: flex;
+}
+
+img {
+  width: 200px;
+  height: 300px;
+  border-radius: 15px;
+}
+.rad2 {
+  display: grid;
+  gap: 16px;
+  row-gap: 16px;
+  width: 100%;
+}
+.rad3 {
+  display: grid;
+  gap: 16px;
+  row-gap: 16px;
+  width: 100%;
+}
+
+.footer {
+  display: grid;
+  gap: 16px;
+  row-gap: 16px;
+  width: 100%;
+}
