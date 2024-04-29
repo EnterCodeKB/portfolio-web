@@ -1,5 +1,4 @@
 import Link from "next/link";
-import Kontakt from "./Kontakt";
 
 function Meny() {
   return (
@@ -8,10 +7,16 @@ function Meny() {
         <nav>
           <ul>
             <li className="">
-              <Link href={"/"}>HEM</Link>
-              <Link href={"/page1"}>Lite om mig</Link>
-              <Link href={"/Kontakt"}>Kontakta mig</Link>
-              <Kontakt />
+              <Link href={"/"}>
+                {" "}
+                <span className="hem"> Hem</span>
+              </Link>
+              <Link href={"/page1"}>
+                <span className="ommig">Lite om mig</span>
+              </Link>
+              <Link href={"/page1"}>
+                <span className="kontaktlink">Kontakt</span>
+              </Link>
             </li>
           </ul>
         </nav>

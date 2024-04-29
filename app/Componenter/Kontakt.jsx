@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import Link from "next/link";
-import layout from "./layout";
-import Meny from "./Componenter/Meny";
+import layout from "../layout";
+import Meny from "./Meny";
 
 function ContactForm({ formData, handleChange }) {
   const [formData, setFormData] = useState({
