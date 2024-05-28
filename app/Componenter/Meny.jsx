@@ -1,27 +1,39 @@
 import Link from "next/link";
+import hamburger from "./hamburger";
 
 function Meny() {
   return (
-    <div>
-      <div className="Meny">
-        <nav>
-          <ul>
-            <li className="">
-              <Link href={"/"}>
-                {" "}
-                <span className="hem"> Hem</span>
-              </Link>
-              <Link href={"/page1"}>
-                <span className="ommig">Lite om mig</span>
-              </Link>
-              <Link href={"/page1"}>
-                <span className="kontaktlink">Kontakt</span>
-              </Link>
-            </li>
-          </ul>
-        </nav>
+    <nav className="navbar">
+      <h1 className="nav-logo">
+        <span>HELENA</span> <br />
+        <span className="A">ADELSTEN</span>
+      </h1>
+      <ul className="nav-menu">
+        <li className="menulist">
+          <Link href={"/"}>
+            <span className="hem"> Home</span>
+          </Link>
+        </li>
+        <li>
+          <Link href={"/aboutme"}>
+            <span className="ommig">About me</span>
+          </Link>
+        </li>
+        <li>
+          <Link href={"/contact"}>
+            <span className="kontaktlink">Contact</span>
+          </Link>
+        </li>
+      </ul>
+
+      <div className="hamburger">
+        <span className="bar"></span>
+        <span className="bar"></span>
+        <span className="bar"></span>
       </div>
-    </div>
+      <hamburger />
+    </nav>
   );
 }
+
 export default Meny;

@@ -27,6 +27,10 @@ function MyIcons() {
         alt="github-icon"
       />
       <img className="icon" src="/Images/next-icon.png" alt="next-icon" />
+
+      <img className="icon" src="/Images/nodes.png" alt="next-icon" />
+
+      <img className="icon" src="/Images/logo.png" alt="next-icon" />
     </div>
   );
 }

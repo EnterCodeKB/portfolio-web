@@ -1,9 +1,10 @@
-import React, { useState } from "react";
-import Link from "next/link";
-import layout from "../layout";
-import Meny from "./Meny";
+"use client";
 
-function ContactForm({ formData, handleChange }) {
+//import Image from "next/image";
+import Link from "next/link";
+import { useState } from "react";
+
+export default function ContactForm() {
   const [formData, setFormData] = useState({
     name: "",
     email: "",
@@ -41,12 +42,16 @@ function ContactForm({ formData, handleChange }) {
 
   return (
     <div>
+      <Link className="text-xl" href="/">
+        <span>Home</span>
+      </Link>
+      <p></p>
       <section className="Kontakt">
-        <h1>Kontakta mig</h1>
+        <h1>You can write to me here</h1>
         <form className="Form" onSubmit={handleSubmit}>
           <p>
             <label>
-              Namn:
+              Name:
               <input
                 className="Namn"
                 type="text"
@@ -58,7 +63,7 @@ function ContactForm({ formData, handleChange }) {
           </p>
           <p>
             <label>
-              E-post:
+              E-Mail:
               <input
                 className="E-post"
                 type="email"
@@ -70,7 +75,7 @@ function ContactForm({ formData, handleChange }) {
           </p>
           <p>
             <label>
-              Meddelande:
+              Message:
               <textarea
                 className="Message"
                 name="message"
@@ -82,8 +87,9 @@ function ContactForm({ formData, handleChange }) {
           <button type="submit">Skicka</button>
         </form>
       </section>
+      <Link className="text-xl ml-52 s " href="/">
+        <span>Home</span>
+      </Link>
     </div>
   );
 }
-
-export default ContactForm;
