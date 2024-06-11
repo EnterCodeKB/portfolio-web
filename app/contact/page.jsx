@@ -28,14 +28,16 @@ export default function ContactForm() {
         },
         body: JSON.stringify(formData),
       });
+      const responseData = await response.json();
       if (response.ok) {
         alert("E-post skickad!");
       } else {
-        alert("Något gick fel. Försök igen senare.");
+        console.error("API error response:", responseData);
+        alert(`Något gick fel: ${responseData.message}`);
       }
     } catch (error) {
       console.error("Fel vid skickande av e-post:", error);
-      alert("Något gick fel. Försök igen senare.");
+      alert(`Något gick fel: ${error.message}`);
     }
   };
 

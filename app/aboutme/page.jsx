@@ -6,7 +6,7 @@ export default function AboutMe() {
         <span>Home</span>
       </Link>
       <p></p>
-      <h1>Here's a few things about me</h1>
+      <h1>Här är lite om mig</h1>
       <p></p>
       <p className="text-lg w-3/4">
         Jag är en mångsidig och professionell person med en akademisk bakgrund

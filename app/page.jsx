@@ -93,9 +93,15 @@ export default function Home() {
               </div>
             </div>
             <div className="box42 " style={{ gridRow: 3 }}>
-              <img src="./Linkedin.png" alt="Limkedins logo" />
-              <img src="./Vector.png" alt="GitHub" />
-              <img src="./fb.png" alt="Facebookslogo" />
+              <Link href="https://www.linkedin.com/in/helena-adelsten-b032a028/">
+                <img src="./Linkedin.png" alt="LinkedIn logo" />
+              </Link>
+              <Link href="https://github.com/helenaltv?tab=repositories">
+                <img src="./Vector.png" alt="GitHub" />
+              </Link>
+              <Link href="https://www.facebook.com/helena.lager.1">
+                <img src="./fb.png" alt="Facebookslogo" />
+              </Link>
             </div>
             <div className="box43" style={{ gridRow: 3 }}>
               <ul>
