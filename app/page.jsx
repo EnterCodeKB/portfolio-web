@@ -58,12 +58,12 @@ export default function Home() {
               imgAlt="imgcard1"
               title="My AI-project"
               description="Vi har skapat en hemsida EaseAccess som är ett verktyg för att göra webbsidor tillgängliga för alla. Det är enkelt att använda och hjälper utvecklare att följa riktlinjer för webbtillgänglighet."
-              linkUrl="https://github.com/helenaltv?tab=repositories"
+              linkUrl="https://github.com/helenaltv/WCAG-min-mobilavers.git"
             />
             <CardComponent
               imgSrc="/Images/52645604-55B1-43A7-9F7F-42F217BA4B5B.png"
               imgAlt="imgcard1"
-              title="My AI-project"
+              title="My Bank-project"
               description="Vi har skapat en hemsida EaseAccess som är ett verktyg för att göra webbsidor tillgängliga för alla. Det är enkelt att använda och hjälper utvecklare att följa riktlinjer för webbtillgänglighet."
               linkUrl="https://github.com/helenaltv/Bank.git"
             />
