@@ -1,9 +1,8 @@
-import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
 import Meny from "./Componenter/Meny";
 
-export const metadata: Metadata = {
+export const metadata = {
   title: "Portfolio",
   description: "Min Portfolio",
 };
