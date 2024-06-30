@@ -64,22 +64,22 @@ export default function Home() {
               imgSrc="/Images/52645604-55B1-43A7-9F7F-42F217BA4B5B.png"
               imgAlt="imgcard1"
               title="My Bank-project"
-              description="Vi har skapat en hemsida EaseAccess som är ett verktyg för att göra webbsidor tillgängliga för alla. Det är enkelt att använda och hjälper utvecklare att följa riktlinjer för webbtillgänglighet."
+              description="En av mina projekt att diploya en banksida med både back- och frontend. En responsive sida."
               linkUrl="https://github.com/helenaltv/Bank.git"
             />
             <CardComponent
-              imgSrc="/Images/82B24444-4289-4E41-B68B-D3A4A6341BAB_1_201_a.jpeg"
-              imgAlt="imgcard1"
-              title="My AI-project"
-              description="Vi har skapat en hemsida EaseAccess som är ett verktyg för att göra webbsidor tillgängliga för alla. Det är enkelt att använda och hjälper utvecklare att följa riktlinjer för webbtillgänglighet."
+              imgSrc="/Skärmavbild 2024-06-29 kl. 19.27.11.png"
+              imgAlt="imgcard3"
+              title="My App-project"
+              description="Arlanda appen handlar om att hå koll på sina flygavdångar på flygplatsen i lungt och ro medan du sitter och äter eller vilar på flygplatsen"
               linkUrl="https://github.com/helenaltv?tab=repositories"
             />
             <CardComponent
-              imgSrc="/Images/82B24444-4289-4E41-B68B-D3A4A6341BAB_1_201_a.jpeg"
-              imgAlt="imgcard1"
-              title="My AI-project"
-              description="Vi har skapat en hemsida EaseAccess som är ett verktyg för att göra webbsidor tillgängliga för alla. Det är enkelt att använda och hjälper utvecklare att följa riktlinjer för webbtillgänglighet."
-              linkUrl="https://github.com/helenaltv?tab=repositories"
+              imgSrc="/81BA4633-13B5-4F19-96FE-795D5BBB67E4.png"
+              imgAlt="imgcard4"
+              title="My Radioplayer"
+              description="Projekt med fungerande radio stationer som playlist som fungerar via Fetch API och vanlig HTML. "
+              linkUrl="https://github.com/helenaltv/Radioplayer"
             />
           </div>
           <div className="footer">
