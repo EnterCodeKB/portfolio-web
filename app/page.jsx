@@ -78,7 +78,7 @@ export default function Home() {
               imgSrc="/81BA4633-13B5-4F19-96FE-795D5BBB67E4.png"
               imgAlt="imgcard4"
               title="My Radioplayer"
-              description="Projekt med fungerande radio stationer som playlist som fungerar via Fetch API och vanlig HTML. "
+              description="Jag har gjort ett litet projekt med fungerande radio stationer som playlist som fungerar via Fetch API och vanlig HTML. "
               linkUrl="https://github.com/helenaltv/Radioplayer"
             />
           </div>
