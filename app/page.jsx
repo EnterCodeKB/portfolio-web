@@ -106,14 +106,17 @@ export default function Home() {
             <div className="box43" style={{ gridRow: 3 }}>
               <ul>
                 <li>
-                  <Link className="hover:text-gray-500 font-bold" href="/">
+                  <Link
+                    className="text-white hover:text-gray-500 font-bold"
+                    href="/"
+                  >
                     Home
                   </Link>
                 </li>
                 <br />
                 <li>
                   <Link
-                    className="hover:text-gray-500 font-bold"
+                    className="text-white hover:text-gray-500 font-bold"
                     href="/aboutme"
                   >
                     About me
@@ -122,7 +125,7 @@ export default function Home() {
                 <br />
                 <li>
                   <Link
-                    className="hover:text-gray-500 font-bold"
+                    className="text-white hover:text-gray-500 font-bold"
                     href="/contact"
                   >
                     Contact

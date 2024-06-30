@@ -44,6 +44,7 @@ li {
   margin-left: 150px;
   top: 10px;
   font-size: 20px;
+  color: white;
 }
 
 .hem {
@@ -111,7 +112,7 @@ p {
 }
 
 .box21 {
-  margin: 20px;
+  margin: 10px;
 }
 
 .box22 {
@@ -269,7 +270,9 @@ button {
   gap: 16px;
   row-gap: 16px;
   width: 1340px;
-  background-color: rgb(237, 243, 246);
+  background-color: #0484bbb4;
+  color: white;
+  margin-top: 64px;
 }
 
 .box41 {
@@ -323,6 +326,10 @@ button {
   height: 150px;
   border-radius: 10px;
   line-height: 28px;
+  color: white;
+}
+.rad4 {
+  margin-top: 64px;
 }
 
 @max-width: 768px {
