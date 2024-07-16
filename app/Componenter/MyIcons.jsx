@@ -31,6 +31,19 @@ function MyIcons() {
       <img className="icon" src="/Images/nodes.png" alt="next-icon" />
 
       <img className="icon" src="/Images/logo.png" alt="next-icon" />
+
+      <img
+        className="icon"
+        src="/Images/mailchimp-icon-2048x2048-7tjwbg42.png"
+        alt="mailchimp-icon"
+      />
+
+      <img
+        className="icon"
+        src="/Images/20336199-wordpress-logotyp-vektor-wordpress-ikon-transparent-png-gratis-vector.jpg
+"
+        alt="wordpress-icon"
+      />
     </div>
   );
 }
