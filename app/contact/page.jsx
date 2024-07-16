@@ -46,7 +46,8 @@ export default function ContactForm() {
       <Link className="text-xl" href="/">
         <span>Home</span>
       </Link>
-      <p></p>
+      <p className="min-mail">Kontakta gärna mig på helenaltv@gmail.com</p>
+
       <section className="Kontakt">
         <h1>You can write to me here</h1>
         <form className="Form" onSubmit={handleSubmit}>
