@@ -46,52 +46,9 @@ export default function ContactForm() {
       <Link className="text-xl" href="/">
         <span>Home</span>
       </Link>
-      <p className="min-mail">Kontakta gärna mig på helenaltv@gmail.com</p>
-
       <section className="Kontakt">
-        <h1>You can write to me here</h1>
-        <form className="Form" onSubmit={handleSubmit}>
-          <p>
-            <label>
-              Name:
-              <input
-                className="Namn"
-                type="text"
-                name="name"
-                value={formData.name}
-                onChange={handleChange}
-              />
-            </label>
-          </p>
-          <p>
-            <label>
-              E-Mail:
-              <input
-                className="E-post"
-                type="email"
-                name="email"
-                value={formData.email}
-                onChange={handleChange}
-              />
-            </label>
-          </p>
-          <p>
-            <label>
-              Message:
-              <textarea
-                className="Message"
-                name="message"
-                value={formData.message}
-                onChange={handleChange}
-              />
-            </label>
-          </p>
-          <button type="submit">Skicka</button>
-        </form>
+        <h1>Feel free to contact me at helenaltv@gmail.com</h1>
       </section>
-      <Link className="text-xl ml-52 s " href="/">
-        <span>Home</span>
-      </Link>
     </div>
   );
 }

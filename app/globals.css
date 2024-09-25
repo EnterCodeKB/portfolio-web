@@ -5,15 +5,16 @@ body {
   font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
     "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
   margin: 0;
-
   padding: 30px;
   width: 100%;
+}
+a {
+  @apply no-underline;
 }
 
 span {
   font-family: "Monoton";
   src: url("/Monoton,Poppins/Monoton");
-
   color: #0484bb;
 }
 
@@ -36,6 +37,7 @@ span {
   display: flex;
   justify-content: space-between;
   gap: 40px;
+  text-decoration: none;
 }
 
 li {
@@ -45,10 +47,12 @@ li {
   top: 10px;
   font-size: 20px;
   color: white;
+  text-decoration: none;
 }
 
 .hem {
   color: rgb(90, 90, 90);
+  text-decoration: none;
 }
 
 .ommig {
@@ -86,9 +90,8 @@ h3 {
 
 p {
   font-style: normal;
-  font-weight: 700;
-  font-size: 38px;
-  line-height: 30px;
+  font-size: 2rem;
+  line-height: 50px;
   padding: 10px;
   display: flex;
   align-items: center;
@@ -177,6 +180,7 @@ p {
 }
 nav-link {
   color: #0484bb;
+  text-decoration: none;
 }
 
 .hamburger {
@@ -210,6 +214,24 @@ nav-link {
   margin-left: 25px;
 }
 
+.beskrivning {
+  display: block;
+  align-items: center;
+  width: 90%;
+  padding: 70px;
+}
+.textimg {
+  width: 100px;
+}
+.textimg2 {
+  width: 100px; /* eller 100% om du vill att den ska sträcka sig över hela bredden */
+  margin-left: 80%;
+}
+.textimg3 {
+  width: 100px; /* eller 100% om du vill att den ska sträcka sig över hela bredden */
+  margin-left: 40%;
+  margin-top: 40px;
+}
 /*kontakt sida*/
 .input-label {
   display: flex;
@@ -217,14 +239,15 @@ nav-link {
   width: 200px;
 }
 .Kontakt {
-  margin: 200px;
-  width: 1000px;
-  height: 400px;
+  margin: 10px;
+  width: 100%;
+  height: 200px;
   text-align: center;
   background-color: rgb(237, 243, 246);
+  color: rgb(90, 90, 90);
 }
 h1 {
-  font-size: 2rem;
+  font-size: 2.5rem;
 }
 
 h5 {

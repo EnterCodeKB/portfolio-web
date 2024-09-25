@@ -26,9 +26,9 @@ export default function Home() {
           <div className="box21 " style={{ gridRow: 2 }}>
             <h3>Hej!</h3>
             <p className="text-3xl">
-              Mitt namn är Helena Adelsten och jag är Mjukvaruingenjör med en
-              bred akademisk utbildnning som täcker områden som apputveckling
-              och webbutveckling i React
+              Hello! My name is Helena Adelsten, and I am a Software Engineer
+              with a broad academic background covering areas such as app
+              development and web development in React and more.
             </p>
           </div>
 
@@ -65,7 +65,7 @@ export default function Home() {
               imgAlt="imgcard1"
               title="My Bank-project"
               description="En av mina projekt att diploya en banksida med både back- och frontend. En responsive sida."
-              linkUrl="https://github.com/helenaltv/Bank.git"
+              linkUrl="https://github.com/helenaltv/BankAws.git"
             />
             <CardComponent
               imgSrc="/Skärmavbild 2024-06-29 kl. 19.27.11.png"

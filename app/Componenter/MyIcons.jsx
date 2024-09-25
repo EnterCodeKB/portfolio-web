@@ -28,9 +28,9 @@ function MyIcons() {
       />
       <img className="icon" src="/Images/next-icon.png" alt="next-icon" />
 
-      <img className="icon" src="/Images/nodes.png" alt="next-icon" />
+      <img className="icon" src="/Images/nodes.png" alt="nodes-icon" />
 
-      <img className="icon" src="/Images/logo.png" alt="next-icon" />
+      <img className="icon" src="/Images/logo.png" alt="docker-icon" />
 
       <img
         className="icon"
@@ -44,6 +44,7 @@ function MyIcons() {
 "
         alt="wordpress-icon"
       />
+      <img className="icon" src="/awslogo.webp" alt="aws-icon" />
     </div>
   );
 }

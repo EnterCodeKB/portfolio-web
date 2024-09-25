@@ -11,17 +11,17 @@ function Meny() {
       <ul className="nav-menu">
         <li className="menulist">
           <Link href={"/"}>
-            <span className="hem"> Home</span>
+            <span style={{ textDecoration: "none" }}>Home</span>
           </Link>
         </li>
         <li>
           <Link href={"/aboutme"}>
-            <span className="ommig">About me</span>
+            <span style={{ textDecoration: "none" }}>About me</span>
           </Link>
         </li>
         <li>
           <Link href={"/contact"}>
-            <span className="kontaktlink">Contact</span>
+            <span style={{ textDecoration: "none" }}>Contact</span>
           </Link>
         </li>
       </ul>
