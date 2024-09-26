@@ -1,0 +1,58 @@
+.footer {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 kolumner, en för varje box */
+  gap: 16px; /* Avstånd mellan boxarna */
+  width: 100%;
+  background-color: #0484bbb4;
+  color: white;
+  margin-top: 64px;
+  padding: 20px;
+  text-align: center;
+}
+.inner {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  width: 1300px;
+}
+.box41,
+.box43 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 150px;
+  width: 33%;
+  border-radius: 10px;
+  line-height: 28px;
+}
+
+.box42 {
+  flex-direction: row;
+  justify-content: space-around; /* Jämn fördelning mellan ikonerna */
+  align-items: center;
+  height: 150px;
+  width: 33%;
+  margin-top: 20px;
+  border-radius: 10px;
+  line-height: 28px;
+}
+
+.contact-button {
+  padding: 5px;
+  margin-left: 10px;
+  background-color: #0070f3;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+  width: 70px;
+  height: 40px;
+}
+
+.contact-button:hover {
+  background-color: #005bb5;
+}
