@@ -11,7 +11,9 @@ body {
 a {
   @apply no-underline;
 }
-
+.text-sm {
+  font-size: 0.875rem;
+}
 span {
   font-family: "Monoton";
   src: url("/Monoton,Poppins/Monoton");
@@ -238,13 +240,16 @@ nav-link {
   justify-content: space-between;
   width: 200px;
 }
-.Kontakt {
-  margin: 10px;
-  width: 100%;
-  height: 200px;
+.kontakt {
   text-align: center;
-  background-color: rgb(237, 243, 246);
   color: rgb(90, 90, 90);
+  width: 60%;
+  height: 400px;
+  margin-left: 250px;
+}
+.gammaltel {
+  width: 300px;
+  margin-left: 500px;
 }
 h1 {
   font-size: 2.5rem;
@@ -254,37 +259,11 @@ h5 {
   margin-left: 25px;
 }
 
-.Form {
-  align-items: center;
-  width: 400px;
-  margin-left: 100px;
-}
 .Kontakt {
   display: flex;
   flex-direction: column;
 }
-.Message {
-  width: 270px;
-  height: 100px;
-  margin-left: 18px;
-}
-.Namn,
-.E-post {
-  width: 350px;
-  height: 25px;
-  gap: 50px;
-}
-label {
-  display: flex;
-  justify-content: space-between;
-  align-items: baseline;
-  font-size: medium;
-}
-input {
-  display: flex;
-  margin: 10px;
-  margin-left: 50px;
-}
+
 button {
   margin-left: 333px;
   height: 30px;
@@ -293,23 +272,32 @@ button {
 
 .footer {
   display: grid;
-  gap: 16px;
-  row-gap: 16px;
-  width: 1340px;
+  grid-template-columns: repeat(3, 1fr); /* 3 kolumner, en för varje box */
+  gap: 16px; /* Avstånd mellan boxarna */
+  width: 100%;
   background-color: #0484bbb4;
   color: white;
   margin-top: 64px;
+  padding: 20px;
+  text-align: center;
 }
 
-.box41 {
+.box41,
+.box42,
+.box43 {
   display: flex;
   flex-direction: column;
   align-items: center;
-
-  width: 300px;
+  justify-content: center;
   height: 150px;
   border-radius: 10px;
   line-height: 28px;
+}
+
+.box42 {
+  flex-direction: row;
+  justify-content: space-around; /* Jämn fördelning mellan ikonerna */
+  align-items: center;
 }
 
 .contact-button {
@@ -329,182 +317,134 @@ button {
 .contact-button:hover {
   background-color: #005bb5;
 }
-
-.box42 {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: start;
-  width: 300px;
-  height: 150px;
-  border-radius: 10px;
-  line-height: 28px;
-  gap: 40px;
-  margin-left: 200px;
-}
-
-.box43 {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  width: 300px;
-  height: 150px;
-  border-radius: 10px;
-  line-height: 28px;
-  color: white;
-}
 .rad4 {
   margin-top: 64px;
 }
 
-@max-width: 768px {
-  .hamburger {
-    display: block;
-  }
-  .hamburger.active .bar:nth-child(1) {
-    transform: translateY(8px) rotate(45deg);
-  }
-  .hamburger.active .bar:nth-child(3) {
-    transform: translateY(-8px) rotate(-45deg);
-  }
-  li {
-    list-style: none;
-  }
-  .nav-menu {
-    position: fixed;
-    left: -100%;
-    gap: 0;
-    top: 70px;
+@media (max-width: 768px) {
+  .navbar {
     flex-direction: column;
-    background-color: #262626;
-    width: 100%;
-    text-align: center;
-    transition: 0.3s;
+    gap: 20px;
   }
-  .menulist {
-    margin: 16 px;
-  }
-
-  .nav-menu.active {
-    left: 0;
-  }
-
-  body {
-    margin: 0;
-    padding: 30px;
-  }
-  span {
-    color: #0484bb;
+  h1 {
+    margin-top: 150px;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
   }
   .A {
-    color: #0484bb;
+    margin-top: -40px;
   }
-
-  .box11 {
-    padding: 20px;
-    height: 10px;
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    gap: 40px;
-    align-items: center;
-    font-size: 12px;
-  }
-  li {
-    display: flex;
-    gap: 80px;
-    margin-right: 240px;
-    top: 10px;
-    font-size: 20px;
-    display: none;
-  }
-
   .rad2 {
-    display: grid;
     display: flex;
     align-items: start;
-    justify-content: space-between;
+    justify-content: center;
+    flex-direction: column;
     row-gap: 16px;
     width: 100%;
     padding: 70px;
+    margin-top: 90px;
   }
 
-  h3 {
-    font-style: normal;
-    font-weight: 700;
-    font-size: 38px;
-    line-height: 10px;
-    padding: 30px;
+  .box11,
+  .rad2,
+  .rad3,
+  .rad4 {
+    padding: 20px;
+  }
+  .box22 {
+    margin-top: 50px;
+  }
+  .ph1,
+  .ph2 {
+    width: 200px;
+    height: 200px;
+  }
+  .rad4 .description {
+    font-size: 0.75rem;
+    padding: 1rem;
+  }
+
+  .footer {
     display: flex;
-    align-items: center;
-    letter-spacing: 1px;
-    color: rgb(61, 61, 61);
+    flex-direction: column;
+    height: 750px;
+    grid-template-columns: repeat(3, 1fr); /* Dela upp footer i 3 kolumner */
+    gap: -102px; /* Justera avståndet mellan kolumner */
+    width: 100%; /* Gör foten fullbredd */
+    background-color: #0484bbb4; /* Bakgrundsfärg */
+    color: white; /* Textfärg */
+    margin-top: 14px; /* Marginal över foten */
+  }
+  .inner {
+    margin-top: -90px;
+  }
+  .box41,
+  .box42,
+  .box43 {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centrera innehållet */
+    justify-content: center; /* Centrera innehållet */
+    width: 100%; /* Gör rutorna fullbredd */
+    height: 250px; /* Låt höjden vara automatisk för att anpassa sig till innehållet */
+    border-radius: 10px; /* Rundade hörn */
+    line-height: 28px; /* Radavstånd */
   }
 
-  p {
-    font-style: normal;
-    font-weight: 700;
-    font-size: 38px;
-    line-height: 10px;
-    padding: 10px;
+  .contact-button {
+    padding: 10px 15px; /* Justera padding för bättre användarupplevelse */
+    background-color: #0070f3; /* Bakgrundsfärg för knappen */
+    color: white; /* Textfärg för knappen */
+    border: none; /* Ingen ram */
+    border-radius: 5px; /* Rundade hörn */
+    cursor: pointer; /* Visar att det är klickbart */
+    font-weight: bold; /* Fet stil för texten */
+    transition: background-color 0.3s ease; /* Lägger till övergångseffekt */
+    width: auto; /* Låt bredden vara automatisk */
+    height: 40px; /* Höjd på knappen */
+  }
 
-    align-items: center;
-    letter-spacing: 1px;
-    color: rgb(90, 90, 90);
+  .contact-button:hover {
+    background-color: #005bb5; /* Mörkare färg vid hover */
   }
 
   .icon-container {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center; /* horisontellt */
+    justify-content: center; /* Center icons in footer */
   }
 
   .icon {
-    width: 40px;
+    width: 40px; /* Adjust icon size */
     height: 40px;
     margin: 8px;
   }
+  .card1 {
+    width: 100%;
+    height: auto;
+  }
+
+  .nav-menu {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  li {
+    font-size: 18px;
+    margin-left: 0;
+    gap: 20px;
+  }
+
+  h3,
+  h2,
+  p {
+    font-size: 1.5rem;
+    padding: 10px;
+  }
+
   .proglogo {
-    margin-left: 520px;
-  }
-  .box22 {
-    position: relative;
-    margin-right: 200px;
-    padding: 30px;
-  }
-
-  .ph1 {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 290px;
-    height: 300px;
-    border-radius: 50%;
-    z-index: 1;
-  }
-
-  .ph2 {
-    position: relative;
-    width: 300px;
-    height: 310px;
-    margin-right: 200px;
-    margin: 0 auto;
-    z-index: 0;
-  }
-
-  .rad4 {
-    display: grid;
-    gap: 16px;
-    row-gap: 16px;
-    width: 100%;
-  }
-
-  .footer {
-    display: grid;
-    gap: 16px;
-    row-gap: 16px;
-    width: 100%;
+    margin-left: 0;
+    text-align: center;
   }
 }
