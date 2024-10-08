@@ -8,6 +8,29 @@ body {
   padding: 30px;
   width: 100%;
 }
+/* Globala stilar för body */
+body {
+  @apply min-h-screen; /* Se till att kroppen sträcker sig över hela skärmen */
+  background-color: white; /* Ljust läge */
+  color: black; /* Textfärg för ljust läge */
+}
+
+/* Mörkt läge stilar */
+body.dark {
+  background-color: #121212; /* Mörk bakgrund */
+  color: white; /* Ljus text */
+}
+
+/* Globala stilar för html */
+html {
+  @apply bg-white text-black; /* Standardstil för ljust läge */
+}
+
+/* Mörkt läge stilar för html */
+html.dark {
+  @apply bg-gray-800 text-white; /* Stil för mörkt läge */
+}
+
 a {
   @apply no-underline;
 }

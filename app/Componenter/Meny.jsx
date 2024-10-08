@@ -1,5 +1,5 @@
 import Link from "next/link";
-import hamburger from "./hamburger";
+import hamburger from "./Hamburger";
 
 function Meny() {
   return (
