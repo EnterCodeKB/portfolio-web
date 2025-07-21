@@ -1,3 +1,4 @@
+"use client";
 function MyIcons() {
   return (
     <div className="icon-container">
