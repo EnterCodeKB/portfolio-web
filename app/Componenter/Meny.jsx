@@ -1,5 +1,5 @@
 import Link from "next/link";
-import hamburger from "./Hamburger";
+import Hamburger from "./hamburger";
 
 function Meny() {
   return (
@@ -31,7 +31,7 @@ function Meny() {
         <span className="bar"></span>
         <span className="bar"></span>
       </div>
-      <hamburger />
+      <Hamburger />
     </nav>
   );
 }
